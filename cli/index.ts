@@ -256,7 +256,7 @@ const clearDir = (dir: string) => {
 
 function initGreeting(filesGenerated: number, flags: any) {
   const lines = [];
-  lines.push(`Welcome to ${chalk.cyan("elm-gql")}!`);
+  lines.push(`Welcome to ${chalk.cyan("elm-gql")}! (uncover patch)`);
   lines.push(`I've generated a number of files to get you started:`);
   lines.push("");
   lines.push(format_bullet(`${chalk.cyan("src/" + flags.namespace + ".elm")}`));
@@ -496,7 +496,7 @@ function collect(val: string, memo: string[]) {
 const program = new commander.Command();
 
 const helpText = `
-Welcome to ${chalk.cyan("elm-gql")}!
+Welcome to ${chalk.cyan("elm-gql")}! (uncover patch)
 
 Make sure to check out the ${chalk.yellow("guides")}:
     https://github.com/vendrinc/elm-gql

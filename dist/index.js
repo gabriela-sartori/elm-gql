@@ -286,7 +286,7 @@ var clearDir = function (dir) {
 };
 function initGreeting(filesGenerated, flags) {
     var lines = [];
-    lines.push("Welcome to " + chalk_1.default.cyan("elm-gql") + "!");
+    lines.push("Welcome to " + chalk_1.default.cyan("elm-gql") + "! (uncover patch)");
     lines.push("I've generated a number of files to get you started:");
     lines.push("");
     lines.push(format_bullet("" + chalk_1.default.cyan("src/" + flags.namespace + ".elm")));
@@ -438,7 +438,7 @@ function collect(val, memo) {
     return memo;
 }
 var program = new commander.Command();
-var helpText = "\nWelcome to " + chalk_1.default.cyan("elm-gql") + "!\n\nMake sure to check out the " + chalk_1.default.yellow("guides") + ":\n    https://github.com/vendrinc/elm-gql\n";
+var helpText = "\nWelcome to " + chalk_1.default.cyan("elm-gql") + "! (uncover patch)\n\nMake sure to check out the " + chalk_1.default.yellow("guides") + ":\n    https://github.com/vendrinc/elm-gql\n";
 program.version(version).name("elm-gql").addHelpText("before", helpText);
 program
     .command("run")
